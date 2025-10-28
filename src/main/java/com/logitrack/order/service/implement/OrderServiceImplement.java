@@ -1,21 +1,21 @@
 package com.logitrack.order.service.implement;
 
+import java.util.List;
+
 import com.logitrack.order.dto.OrderRequest;
 import com.logitrack.order.dto.OrderResponse;
 import com.logitrack.order.service.OrderService;
-import org.springframework.stereotype.Service;
-import java.util.List;
-import java.util.Collections;
 
-@Service
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImplement implements OrderService {
+
     @Override
     public List<OrderResponse> getAllOrders() {
-        return Collections.emptyList();
+        throw new UnsupportedOperationException("Unimplemented method 'getAllOrders'");
     }
 
     @Override
     public OrderResponse createOrder(OrderRequest request) {
-        return new OrderResponse(1L, request.getOrderName(), "CREATED");
+        throw new UnsupportedOperationException("Unimplemented method 'createOrder'");
     }
+
 }
