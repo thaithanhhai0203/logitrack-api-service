@@ -25,10 +25,7 @@ public class OrderEntity {
 
     @Column(nullable = false, length = 255)
     private String address;
-
-    @Column(length = 100)
-    private String area;
-
+    
     @Column(nullable = false)
     private Double weight;
 
@@ -40,6 +37,12 @@ public class OrderEntity {
 
     @Column(name = "customer_id", nullable = false)
     private Long customerId;
+
+    @Column(nullable = false, length = 50)
+    private Double longitude;
+
+    @Column(nullable = false, length = 50)
+    private Double latitude;
 
     @Column(name = "inserted_datetime", nullable = false, updatable = false)
     private LocalDateTime insertedDatetime;

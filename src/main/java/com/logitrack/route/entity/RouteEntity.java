@@ -29,12 +29,6 @@ public class RouteEntity {
     @Column(name = "driver_id", nullable = false)
     private Long driverId;
 
-    @Column(nullable = false, length = 50)
-    private String longitude;
-
-    @Column(nullable = false, length = 50)
-    private String latitude;
-
     @Column(name = "inserted_datetime", nullable = false, updatable = false)
     private LocalDateTime insertedDatetime;
 
